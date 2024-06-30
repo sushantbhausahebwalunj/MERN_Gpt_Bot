@@ -1,7 +1,6 @@
-import { Typography } from '@mui/material'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Typography } from '@mui/material';
 import { TbBrandOpenai } from "react-icons/tb";
+import { Link } from 'react-router-dom';
 
 
 const Logo = () => {

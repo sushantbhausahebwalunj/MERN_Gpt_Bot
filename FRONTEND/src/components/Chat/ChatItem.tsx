@@ -1,9 +1,8 @@
-import { Avatar, Box, Typography } from '@mui/material'
-import React from 'react'
+import { Avatar, Box, Typography } from '@mui/material';
 import { TbBrandOpenai } from "react-icons/tb";
-import { useAuth } from '../../context/AuthContext';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { coldarkDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { useAuth } from '../../context/AuthContext';
 
 
 function extractCodeFromString(message : string){
@@ -45,7 +44,7 @@ const ChatItem = ({
     <Box sx={{display:"flex", p:2, bgcolor:"#004d56",  gap:2 , my:2}}
     >
      <Avatar sx={{ml:"0", bgcolor:"black", color:"white" }}>
-     {/* {auth?.user?.name && auth.user.name[0]} {auth?.user?.name && auth.user.name.split(" ")[1] && auth.user.name.split(" ")[1][0]} */}
+     {auth?.user?.name && auth.user.name[0]} {auth?.user?.name && auth.user.name.split(" ")[1] && auth.user.name.split(" ")[1][0]}
     
      </Avatar>
      <Box>

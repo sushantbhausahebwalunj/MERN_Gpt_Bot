@@ -16,15 +16,15 @@
 
 
 
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { Avatar, Box, Typography, Button, IconButton } from '@mui/material';
+import { Avatar, Box, Button, IconButton, Typography } from '@mui/material';
 import { red } from '@mui/material/colors';
-import { useAuth } from '../context/AuthContext';
-import ChatItem from '../components/Chat/ChatItem';
-import { IoMdSend } from 'react-icons/io';
-import { deleteUserChats, getUserChats, sendChatRequest } from '../helpers/api-communitcators';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import toast from 'react-hot-toast';
+import { IoMdSend } from 'react-icons/io';
 import { useNavigate } from 'react-router-dom';
+import ChatItem from '../components/Chat/ChatItem';
+import { useAuth } from '../context/AuthContext';
+import { deleteUserChats, getUserChats, sendChatRequest } from '../helpers/api-communitcators';
 
 type Message = {
   role: 'user' | 'assistant';

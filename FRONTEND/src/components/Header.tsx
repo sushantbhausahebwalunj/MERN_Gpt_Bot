@@ -1,7 +1,6 @@
 import { AppBar, Toolbar } from '@mui/material'
-import React from 'react'
-import Logo from './shared/Logo'
 import { useAuth } from '../context/AuthContext'
+import Logo from './shared/Logo'
 import NavigationLink from './shared/NavigationLink'
 
 const Header = () => {

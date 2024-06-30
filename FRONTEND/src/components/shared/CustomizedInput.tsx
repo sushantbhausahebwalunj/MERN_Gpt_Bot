@@ -1,6 +1,4 @@
-import React from 'react'
-import { TextField } from '@mui/material'
-import { blueGrey, red } from '@mui/material/colors';
+import { TextField } from '@mui/material';
 
 type Props ={
     name:string;
